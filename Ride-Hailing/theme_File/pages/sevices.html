@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..//images/logo/Ride-orange.png" type="image/icon type">
+    <title>Ride.</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- 
+    <div class="intro">
+        <h1 class="logo-header">
+            <span class="logo">Ri</span><span class="logo">de.</span>
+        </h1>
+    </div> -->
+
+    <header id="nav">
+        <nav class="bg-orange border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../images/logo/Ride -white.png" class="h-8" alt="" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Ride.</span>
+                </a>
+                <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                        data-dropdown-placement="bottom">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="../images/avathar.jpg" alt="user photo">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                        id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Rithu</span>
+                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">rithu@123</span>
+                        </div>
+                        <ul class="py-2" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="./pages/common/common_Dashboard.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="./Login.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                    In</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="navbar-user" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-user" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                    <ul
+                        class="flex flex-col font-medium mt-4 rounded-lg bg-white md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent dark:border-gray-700">
+                        <li>
+                            <a href="../index.html"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white ">Home</a>
+
+                        </li>
+                        <li>
+                            <a href="./sevices.html"
+                                class="block py-2 px-3 text-yellow-600 md:text-white md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white">Services</a>
+                        </li>
+                        <li>
+                            <a href="./About.html"
+                                class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-300 md:p-0 ">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 px-3  md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white"
+                                aria-current="page">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- banner Heading -->
+    <div class="w-full h-auto md:h-[40vh] shadow-lg bg-cover bg-center" style="background-image:
+    linear-gradient(112.1deg, rgba(32, 38, 57, 0.351) 11.4%, rgb(227, 162, 97,0.9) 70.2%),
+          url('../images/about.jpg');">
+        <div class="flex justify-center item-center pt-20">
+            <span class=" text-[80px] font-semibold uppercase text-white">Services</span>
+        </div>
+    </div>
+
+    <section class="bg-yellow-600 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">A New Way to Share Your Ride</h1>
+            <p class="mt-4 text-lg">Affordable, community-focused, and environmentally conscious transport</p>
+            <a href="#"
+                class="mt-6 inline-block bg-white text-orange-600 py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-gray-200">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">What We Offer</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Feature 1 -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-green-500 mb-4">
+                        <!-- Icon could go here -->
+                        🚗
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ride Sharing</h3>
+                    <p class="text-gray-600">Share rides with drivers going your way. Join a community of responsible
+                        drivers and reduce your commute costs.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-yellow-500 mb-4">
+                        💸
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cost-Effective Travel</h3>
+                    <p class="text-gray-600">Save money on every trip. Drivers earn enough to cover their expenses,
+                        while riders enjoy affordable, transparent fares.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-green-500 mb-4">
+                        🌱
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Environmentally Friendly</h3>
+                    <p class="text-gray-600">Reduce your carbon footprint by carpooling. Fewer cars on the road means
+                        less traffic and lower emissions.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">How It Works</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-yellow-500 mb-4">
+                        🔍
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Search for a Ride</h3>
+                    <p class="text-gray-600">Find a ride based on your destination and see available drivers heading
+                        your way.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-yellow-500 mb-4">
+                        🤝
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Connect with a Driver</h3>
+                    <p class="text-gray-600">Connect with trusted drivers from your community. View mutual connections
+                        and references.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-yellow-500 mb-4">
+                        🚗
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Enjoy the Journey</h3>
+                    <p class="text-gray-600">Track your ride via GPS, enjoy transparent pricing, and stay safe with
+                        in-app communication and emergency features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community and Testimonials Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Join a Community of Responsible Riders and Drivers</h2>
+            <div class="mt-12 space-y-8">
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <p class="text-gray-600">"I've met so many people in my neighborhood just by sharing rides. It's a
+                        great way to save money and help the planet!"</p>
+                    <p class="text-green-700 font-bold mt-4">– Jessica P.</p>
+                </div>
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <p class="text-gray-600">"As a driver, this app allows me to offset fuel costs while helping others
+                        get around. Win-win!"</p>
+                    <p class="text-green-700 font-bold mt-4">– Michael S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="bg-yellow-500 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Your Safety is Our Priority</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Safety Features -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-green-500 mb-4">
+                        🛡️
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Safety Features</h3>
+                    <p class="text-gray-600">All drivers undergo background checks, and every ride is tracked via GPS.
+                        Build trust by connecting with drivers through mutual connections.</p>
+                </div>
+
+                <!-- Emergency Support -->
+                <div class="bg-white shadow-lg p-8 rounded-lg">
+                    <div class="text-4xl text-green-500 mb-4">
+                        ☎️
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Emergency Support</h3>
+                    <p class="text-gray-600">In case of emergency, the app offers in-app SOS features, 24/7 support, and
+                        real-time ride tracking for safe journeys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Start Saving and Sharing Today!</h2>
+            <div class="mt-8">
+                <a href="#" class="px-8 py-4 bg-yellow-400 text-white rounded-lg hover:bg-green-700 mx-4">Become a
+                    Driver</a>
+                <a href="#" class="px-8 py-4 bg-yellow-400 text-white rounded-lg hover:bg-green-700 mx-4">Find a Ride</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- ----------------------- footer--------------------------------- -->
+
+
+    <footer class="bg-white rounded-lg shadow ">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href=""
+                    class="hover:underline">Ride.</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3  text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li class="ml-3">
+                    <a href="./pages/About.html" class="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li class="ml-3">
+                    <a href="./pages/" class="hover:underline me-4 md:me-6">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <div class="fixed bottom-8 right-8 md:bottom-16 md:right-8">
+        <a href="#nav"><img src="./images/logo/Ride-orange.png" alt="" class="h-8 md:h-14"></a>
+    </div>
+    <script src="../js/javascript.js"></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
